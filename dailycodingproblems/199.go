@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -22,15 +21,6 @@ func MinPattern(p string) string {
 	return strings.Repeat("(", -mn) + p + strings.Repeat(")", -mn + d)
 }
 
-func TestMinPattern() {
-	p := "()))(()((()()()))"
-	sol := MinPattern(p)
-	fmt.Println(sol, len(p), len(sol))
-}
-
-func main() {
-	TestMinPattern()
-}
 
 
 
