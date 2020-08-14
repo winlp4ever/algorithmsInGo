@@ -23,3 +23,11 @@ func Test208(t *testing.T) {
 	b := Partition(r, 5)
 	fmt.Println(b.ToString())
 }
+
+func TestCheckBipartie(t *testing.T) {
+	//edges := [][]int{{1, 5}, {2, 4}, {2, 5}, {1, 6}, {3, 5}}
+	edges := [][]int{{1, 2}, {3, 2}}
+	g := NewGraph(edges)
+	fmt.Println(g)
+	fmt.Println(g.IsBipartie())
+}
