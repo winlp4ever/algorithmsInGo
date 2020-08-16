@@ -31,3 +31,13 @@ func TestCheckBipartie(t *testing.T) {
 	fmt.Println(g)
 	fmt.Println(g.IsBipartie())
 }
+
+type T struct {
+	Val int
+}
+
+func TestNil(t *testing.T) {
+	var a *T = nil
+	a = new(T)
+	fmt.Println(a)
+}
