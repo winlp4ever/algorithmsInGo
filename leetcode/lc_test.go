@@ -18,3 +18,9 @@ func TestMedianOfTwoSortedArrays(*testing.T) {
 	b = []int{2, 3}
 	fmt.Println(MedianOfTwoSortedArrays(a, b))
 }
+
+func TestTrieBuild(*testing.T) {
+	words := []string{"hello", "hi", "aren"}
+	trie := GenTrie(words)
+	fmt.Println(trie.ToString())
+}
